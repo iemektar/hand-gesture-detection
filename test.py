@@ -10,12 +10,12 @@ from cnn import CNN
 
 
 #DatasetCreator tool for classes
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_one')
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_two')
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_three')
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_four')
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_five')
-wm_hand_one = WindowManager(dataset_creating=True, class_name='hand_fist')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_one')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_two')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_three')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_four')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_five')
+wm_hand_one = WindowManager(dataset_creating=True, parent_folder='image', class_name='hand_fist')
 
 
 #training model

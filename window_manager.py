@@ -25,11 +25,11 @@ class WindowManager():
                 self._camera_manager = Camera()
                 self._hand_detector = HandDetector()
                 self._dataset_creating = dataset_creating
-                
+                self._parent_folder = kwargs['parent_folder']
                 if self._dataset_creating:
                         self.class_name = kwargs['class_name']
                 else:
-                        self.labels = DatasetLoader.get_folders(kwargs['parent_folder'])
+                        self.labels = DatasetLoader.get_folders(self._parent_folder)
                         
                 self.show()
 
